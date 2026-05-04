@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyPulse Weather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <div class="aurora aurora-1"></div>
+  <div class="aurora aurora-2"></div>
+
+  <main class="shell">
+    <header class="hero fade-in">
+      <p class="eyebrow">Live Conditions</p>
+      <h1>SkyPulse</h1>
+      <p class="subtitle">Dynamic weather dashboard powered by Open-Meteo</p>
+    </header>
+
+    <section class="panel slide-up">
+      <form id="cityForm" class="form-row" autocomplete="off">
+        <label for="cityInput">City Name</label>
+        <div class="field-wrap">
+          <input id="cityInput" name="city" type="text" placeholder="Try Lahore, Karachi, Islamabad..." required />
+          <button type="submit">Search City</button>
+        </div>
+      </form>
+
+      <div class="actions">
+        <button id="locationBtn" class="ghost-btn" type="button">Use My Location</button>
+        <button id="defaultBtn" class="ghost-btn" type="button">Default Lahore</button>
+      </div>
+
+      <p id="status" class="status">Ready</p>
+    </section>
+
+    <section id="result" class="weather-card hidden">
+      <div class="weather-top">
+        <h2 id="place">-</h2>
+        <p id="time">-</p>
+      </div>
+      <div class="metrics">
+        <article class="metric">
+          <h3>Temperature</h3>
+          <p id="temp">-</p>
+        </article>
+        <article class="metric">
+          <h3>Wind Speed</h3>
+          <p id="wind">-</p>
+        </article>
+        <article class="metric">
+          <h3>Coordinates</h3>
+          <p id="coords">-</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

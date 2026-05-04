@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Reception Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <main class="container">
+    <h1>Hotel Reception Assistant</h1>
+    <p class="subtitle">Ask anything about hotel services, policies, and facilities.</p>
+
+    {% if startup_error %}
+      <div class="error">
+        <strong>Startup error:</strong> {{ startup_error }}
+        <div>Run <code>python src/build_pipeline.py</code> first.</div>
+      </div>
+    {% endif %}
+
+    <form method="post" class="search-form">
+      <input
+        type="text"
+        name="query"
+        placeholder="e.g., Do you have airport pickup?"
+        value="{{ query }}"
+        required
+      />
+      <button type="submit">Ask</button>
+    </form>
+
+    {% if best_answer %}
+      <section class="answer-box">
+        <h2>Best Match</h2>
+        <p>{{ best_answer }}</p>
+      </section>
+    {% endif %}
+
+    <!-- {% if results %}
+      <section>
+        <h3>Top Similar QnA Matches</h3>
+        {% for item in results %}
+          <article class="result-card">
+            <div><strong>Question:</strong> {{ item.question }}</div>
+            <div><strong>Answer:</strong> {{ item.answer }}</div>
+            <div><strong>Category:</strong> {{ item.category }}</div>
+            <div><strong>Similarity:</strong> {{ '%.4f'|format(item.score) }}</div>
+          </article>
+        {% endfor %}
+      </section>
+    {% endif %} -->
+  </main>
+</body>
+</html>

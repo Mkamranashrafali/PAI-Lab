@@ -1,0 +1,127 @@
+[
+  {
+    "question": "what time is check-in?",
+    "answer": "Check-in starts at 2:00 PM. Early check-in is available based on room availability.",
+    "category": "checkin_checkout"
+  },
+  {
+    "question": "what time is check-out?",
+    "answer": "Check-out is at 12:00 PM. Late check-out can be requested at the front desk.",
+    "category": "checkin_checkout"
+  },
+  {
+    "question": "do you provide airport pickup?",
+    "answer": "Yes, we provide paid airport pickup and drop-off. Please share your flight details 24 hours in advance.",
+    "category": "transport"
+  },
+  {
+    "question": "is breakfast included in the room price?",
+    "answer": "Breakfast is included for Deluxe and Suite bookings. Standard rooms can add breakfast for an additional charge.",
+    "category": "dining"
+  },
+  {
+    "question": "do you have free wi-fi?",
+    "answer": "Yes, complimentary high-speed Wi-Fi is available in all rooms and public areas.",
+    "category": "amenities"
+  },
+  {
+    "question": "is there parking available?",
+    "answer": "Yes, we offer free on-site parking for hotel guests.",
+    "category": "amenities"
+  },
+  {
+    "question": "do you have a swimming pool?",
+    "answer": "Yes, our outdoor swimming pool is open daily from 7:00 AM to 9:00 PM.",
+    "category": "amenities"
+  },
+  {
+    "question": "is the hotel family-friendly?",
+    "answer": "Yes, we are family-friendly and provide extra beds, baby cots, and kid-friendly meal options.",
+    "category": "policies"
+  },
+  {
+    "question": "are pets allowed?",
+    "answer": "Small pets are allowed in selected rooms with an additional cleaning fee.",
+    "category": "policies"
+  },
+  {
+    "question": "how can i cancel my booking?",
+    "answer": "You can cancel through our website or call reception. Free cancellation is available up to 24 hours before check-in.",
+    "category": "booking"
+  },
+  {
+    "question": "do you have room service?",
+    "answer": "Yes, room service is available 24/7 with a full menu.",
+    "category": "dining"
+  },
+  {
+    "question": "can i request a non-smoking room?",
+    "answer": "Yes, non-smoking rooms are available on request and subject to availability.",
+    "category": "room_preferences"
+  },
+  {
+    "question": "do you offer laundry service?",
+    "answer": "Yes, same-day laundry service is available for items submitted before 10:00 AM.",
+    "category": "services"
+  },
+  {
+    "question": "is there a gym or fitness center?",
+    "answer": "Yes, our fitness center is open 24 hours for in-house guests.",
+    "category": "amenities"
+  },
+  {
+    "question": "do you have meeting rooms?",
+    "answer": "Yes, we have fully equipped meeting and conference rooms for business events.",
+    "category": "business"
+  },
+  {
+    "question": "can i pay at the hotel?",
+    "answer": "Yes, pay-at-hotel is available for selected rate plans.",
+    "category": "payment"
+  },
+  {
+    "question": "which payment methods do you accept?",
+    "answer": "We accept cash, major credit/debit cards, and digital wallets.",
+    "category": "payment"
+  },
+  {
+    "question": "how far is the hotel from the city center?",
+    "answer": "The hotel is about 3 kilometers from the city center, around 10 minutes by car.",
+    "category": "location"
+  },
+  {
+    "question": "do you provide extra towels and toiletries?",
+    "answer": "Yes, additional towels and toiletries are available on request from housekeeping.",
+    "category": "services"
+  },
+  {
+    "question": "is there 24-hour reception?",
+    "answer": "Yes, our front desk is open 24/7 to assist you anytime.",
+    "category": "reception"
+  },
+  {
+    "question": "can i store my luggage before check-in?",
+    "answer": "Yes, complimentary luggage storage is available before check-in and after check-out.",
+    "category": "services"
+  },
+  {
+    "question": "do you offer wake-up calls?",
+    "answer": "Yes, wake-up call service is available any time; request it at reception.",
+    "category": "services"
+  },
+  {
+    "question": "can i book a taxi from the hotel?",
+    "answer": "Yes, reception can arrange a taxi for local travel or airport transfer.",
+    "category": "transport"
+  },
+  {
+    "question": "do rooms have air conditioning?",
+    "answer": "Yes, all rooms are equipped with air conditioning and temperature controls.",
+    "category": "amenities"
+  },
+  {
+    "question": "do you offer anniversary or birthday room decoration?",
+    "answer": "Yes, we offer paid room decoration packages for special occasions.",
+    "category": "services"
+  }
+]

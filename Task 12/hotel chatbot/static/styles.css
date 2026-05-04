@@ -1,0 +1,96 @@
+﻿:root {
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --primary: #114b8b;
+  --text: #132238;
+  --border: #d9e3f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #eef4fb, #f9fbff);
+  color: var(--text);
+}
+
+.container {
+  max-width: 900px;
+  margin: 32px auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(17, 75, 139, 0.08);
+}
+
+h1 {
+  margin: 0 0 8px;
+  color: var(--primary);
+}
+
+.subtitle {
+  margin: 0 0 20px;
+  color: #4b5f7a;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.search-form button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+.answer-box {
+  background: #ecf5ff;
+  border: 1px solid #cde2ff;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.result-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  margin: 10px 0;
+  background: #fff;
+}
+
+.error {
+  background: #fff2f2;
+  border: 1px solid #ffcece;
+  color: #7a1f1f;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    margin: 16px;
+    padding: 16px;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+}
